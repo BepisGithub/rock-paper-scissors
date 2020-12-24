@@ -11,15 +11,15 @@
             switch(ranNum){ //switch statement to handle the options
                 case 1: 
                     console.log("Rock");
-                    return "Rock";
+                    return "rock";
                     break;
                 case 2:
                     console.log("Paper");
-                    return "Paper";
+                    return "paper";
                     break;
                 case 3:
                     console.log("Scissors");
-                    return "Scissors";
+                    return "scissors";
                     break;
             }
         }
@@ -27,8 +27,9 @@
         
         //This is where the game happens
         while(true){
-            let userGo = prompt("Welcome to rock, paper, scissors. Enter your choice: ");
-            userGo = userGo.toLowerCase();
+            console.log("Welcome to rock, paper, scissors. Enter your choice: ");
+            let userGo = readLine(); //get the input from the user
+            userGo = userGo.toLowerCase(); //make sure its lower case for easier use
             console.log(userGo);
         }
         
