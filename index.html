@@ -26,15 +26,35 @@
         
         
         //This is where the game happens
-        while(true){
-            console.log("Welcome to rock, paper, scissors. Enter your choice: ");
-            let userGo = readLine(); //get the input from the user
-            userGo = userGo.toLowerCase(); //make sure its lower case for easier use
-            console.log(userGo);
-        }
+        function game(pSel,cSel){
+            if(pSel==cSel){
+                console.log("Draw!");
+            }
+            else if(pSel == "rock" && cSel == "paper"){
+                console.log("You lose " + cSel + " beats " + pSel);
+            }
+            else if(pSel == "rock" && cSel == "scissors"){
+                console.log("You win " + pSel + " beats " + cSel);
+            }
+
+
+            else if(pSel == "paper" && cSel == "rock"){
+                console.log("You win");
+            }
+            else if(pSel == "paper" && cSel == "scissors"){
+                console.log("You lose");
+            }
+
+            else if(pSel == "scissors" && cSel == "paper"){
+                console.log("You win");
+            }
+            else if(pSel == "scissors" && cSel == "rock"){
+                console.log("You lose");
+            }
+
+        }        
         
-        
-        
+        game("rock",computerPlay());
         </script>
 
     </body>
