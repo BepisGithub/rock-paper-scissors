@@ -20,11 +20,11 @@
             }
         }
         
-        function lowerCaseInput(inp){
+        function lowerCaseInput(inp){ //takes the users input and makes it lowercase for easier comparison with the strings from the computer function
             return inp.toLowerCase();
         }
 
-        function getUserInput(){
+        function getUserInput(){ //gets users input then passes it to a lower case input function
             let userChoice = prompt("Welcome to rock paper scissors, enter your choice");
             userChoice = lowerCaseInput(userChoice);
             return userChoice;
@@ -61,8 +61,8 @@
         }
 
         
-        function play(n){
-            for(i=0; i<n; i++){
+        function play(n){ //play the game n number of times
+            for(i=0; i<n; i++){ //for loop to count n number of times
                 game(getUserInput(),computerPlay());
             }
         }
