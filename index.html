@@ -27,6 +27,7 @@
         function getUserInput(){
             let userChoice = prompt("Welcome to rock paper scissors, enter your choice");
             userChoice = lowerCaseInput(userChoice);
+            return userChoice;
         }
 
 
@@ -59,7 +60,7 @@
 
         }        
         
-        game(userChoice,computerPlay());
+        game(getUserInput(),computerPlay());
         </script>
 
     </body>
