@@ -58,9 +58,17 @@
                 console.log("You lose, " + cSel + " beats " + pSel);
             }
 
-        }        
+        }
+
         
-        game(getUserInput(),computerPlay());
+        function playCounter(n){
+            for(i=0; i<n; i++){
+                game(getUserInput(),computerPlay());
+            }
+        }
+
+        playCounter(5);
+        
         </script>
 
     </body>
