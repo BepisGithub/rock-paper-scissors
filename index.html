@@ -5,11 +5,11 @@
     </head>
     <body>
         <script>
-        function computerPlay(){
-            let ranNum = 1+(Math.floor(Math.random() *3))
-            console.log(ranNum);
-            switch(ranNum){
-                case 1:
+        function computerPlay(){ //the computer's auto generated move
+            let ranNum = 1+(Math.floor(Math.random() *3)) //Randomly generate a number, and make sure it is in the range of 1-3 
+            console.log(ranNum); //remove later
+            switch(ranNum){ //switch statement to handle the options
+                case 1: 
                     console.log("Rock");
                     return "Rock";
                     break;
