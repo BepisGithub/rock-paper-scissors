@@ -20,8 +20,14 @@
             }
         }
         
-        let userChoice = prompt("Welcome to rock paper scissors, enter your choice");
+        function lowerCaseInput(inp){
+            return inp.toLowerCase();
+        }
 
+        function getUserInput(){
+            let userChoice = prompt("Welcome to rock paper scissors, enter your choice");
+            userChoice = lowerCaseInput(userChoice);
+        }
 
 
         //This is where the game happens
