@@ -61,13 +61,13 @@
         }
 
         
-        function playCounter(n){
+        function play(n){
             for(i=0; i<n; i++){
                 game(getUserInput(),computerPlay());
             }
         }
-
-        playCounter(5);
+        let userCount = prompt("How many times do you want to play? Enter a number");
+        play(userCount);
         
         </script>
 
