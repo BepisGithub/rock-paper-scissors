@@ -9,7 +9,9 @@
         <button id="scissors"> Scissors </button>
         <div id="results">
         <script>
-        
+        let counter = 0;
+        let userWins = 0;
+        let cpuWins = 0;
         const results = document.querySelector("#results");
         function computerPlay(){ //the computer's auto generated move
             let ranNum = 1+(Math.floor(Math.random() *3)) //Randomly generate a number, and make sure it is in the range of 1-3 
@@ -47,6 +49,7 @@
             else if(pSel == "rock" && cSel == "paper"){
                 // console.log("You lose, " + cSel + " beats " + pSel);
                 results.textContent = `You lose, ${cSel} beats ${pSel}`;
+                cpuWins++;
             }
             else if(pSel == "rock" && cSel == "scissors"){
                 // console.log("You win, " + pSel + " beats " + cSel);
@@ -61,6 +64,7 @@
             else if(pSel == "paper" && cSel == "scissors"){
                 // console.log("You lose, " + cSel + " beats " + pSel);
                 results.textContent = `You lose, ${cSel} beats ${pSel}`;
+                cpuWins++;
             }
 
             else if(pSel == "scissors" && cSel == "paper"){
@@ -70,7 +74,11 @@
             else if(pSel == "scissors" && cSel == "rock"){
                 // console.log("You lose, " + cSel + " beats " + pSel);
                 results.textContent = `You lose, ${cSel} beats ${pSel}`;
+                cpuWins++;
             }
+            counter++;
+            results.textContent += ` | ${counter} games played`;
+            
         }
         const rockButton = document.querySelector("#rock");
         const paperButton = document.querySelector("#paper");
