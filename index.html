@@ -24,11 +24,11 @@
             return inp.toLowerCase();
         }
 
-        function getUserInput(){ //gets users input then passes it to a lower case input function
-            let userChoice = prompt("Welcome to rock paper scissors, enter your choice");
-            userChoice = lowerCaseInput(userChoice);
-            return userChoice;
-        }
+        // function getUserInput(){ //gets users input then passes it to a lower case input function
+        //     let userChoice = prompt("Welcome to rock paper scissors, enter your choice");
+        //     userChoice = lowerCaseInput(userChoice);
+        //     return userChoice;
+        // }
 
 
         //This is where the game happens
@@ -58,19 +58,26 @@
                 console.log("You lose, " + cSel + " beats " + pSel);
             }
 
+        const rockButton = document.querySelector("#rock");
+        const paperButton = document.querySelector("#paper");
+        const scissorsButton = document.querySelector("#scissors");
+
+
         }
 
         
-        function play(n){ //play the game n number of times
-            for(i=0; i<n; i++){ //for loop to count n number of times
-                game(getUserInput(),computerPlay());
-            }
-        }
-        let userCount = prompt("How many times do you want to play? Enter a number");
-        play(userCount);
+        // function play(n){ //play the game n number of times
+        //     for(i=0; i<n; i++){ //for loop to count n number of times
+        //         game(getUserInput(),computerPlay());
+        //     }
+        // }
+        // let userCount = prompt("How many times do you want to play? Enter a number");
+        // play(userCount);
         //finished
         </script>
-        
+        <button id="rock"> Rock </button>
+        <button id="paper"> Paper </button>
+        <button id="scissors"> Scissors </button>
     </body>
 
 </html>
