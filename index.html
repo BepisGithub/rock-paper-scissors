@@ -61,6 +61,11 @@
         const rockButton = document.querySelector("#rock");
         const paperButton = document.querySelector("#paper");
         const scissorsButton = document.querySelector("#scissors");
+        const results = document.querySelector("#results");
+
+        rockButton.addEventListener("click", () => { game("rock",computerPlay()) });
+        paperButton.addEventListener("click", () => { game("paper",computerPlay()) });
+        scissorsButton.addEventListener("click", () => { game("rock",computerPlay()) });
 
 
         }
@@ -78,6 +83,9 @@
         <button id="rock"> Rock </button>
         <button id="paper"> Paper </button>
         <button id="scissors"> Scissors </button>
+        <div id="results">
+
+        </div>
     </body>
 
 </html>
